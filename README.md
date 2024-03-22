@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm I'm shewit gebreyesus, a Cloud and DevOps Engineer passionate about building scalable and reliable infrastructure solutions. 💻☁️</h1>
+<h1 align="center">Hi 👋, I'm shewit gebreyesus, a Cloud and DevOps Engineer passionate about building scalable and reliable infrastructure solutions. 💻☁️</h1>
 <h3 align="center">Cloud and DevOps engineer</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=shewitgebreyesus&label=Profile%20views&color=0e75b6&style=flat" alt="shewitgebreyesus" /> </p>

@@ -1,0 +1,33 @@
+name: Update WakaTime stats
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # This will run the workflow daily at midnight
+  push:
+    branches:
+      - main
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Git
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+
+    - name: Update WakaTime stats
+      run: |
+        # Your commands to update WakaTime stats go here
+        git add README.md
+        git commit -m "Update WakaTime stats"
+
+    - name: Push changes
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:main
